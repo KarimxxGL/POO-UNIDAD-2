@@ -90,7 +90,7 @@ public class Natacion extends JFrame implements ActionListener {
         constraints.gridy++;
         panelFormulario.add(horarioLabel, constraints);
 
-        horarioComboBox = new JComboBox<String>(new String[] {"7:00 - 9:00", "9:00 - 11:00", "11:00 - 13:00"});
+        horarioComboBox = new JComboBox<String>(new String[] {"7:00 - 9:00", "9:00 - 11:00", "11:00 - 13:00", "13:00-15:00"});
         horarioComboBox.setFont(new Font("Arial", Font.BOLD, 16));
         horarioComboBox.setOpaque(true);
         constraints.gridx = 1;
@@ -189,7 +189,7 @@ public class Natacion extends JFrame implements ActionListener {
                 "100 metros libre para descansar.");
             }
         }else{
-            JOptionPane.showMessageDialog(null, "Indicar al personal su situacion");
+            JOptionPane.showInputDialog(null, "INDIQUE SU ENFERMEDAD: ");
         }
     }
 }
